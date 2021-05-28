@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>To Do List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .col-sm-4{
+            text-align: center;
+            border: 3px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="jumbotron text-center">
+        <h1>To Do List</h1>
+      </div>
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <h3>Todo</h3>
+          </div>
+          <div class="col-sm-4">
+            <h3>In Progress</h3>
+          </div>
+          <div class="col-sm-4">
+            <h3>Done</h3>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div id="vaccine-todo">
+                    <h5>Take Vaccine</h5>
+                    <button onclick="vaccine_moveToInProgress()">In Progress</button>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div id="vaccine-inprogress" style="visibility: hidden;">
+                    <h5>Take Vaccine</h5>
+                    <button onclick="vaccine_moveToDone()" id="inprogress-card1">Done</button>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <h5 id="vaccine-done" style="visibility: hidden;">Take Vaccine</h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+                <div id="web-todo">
+                    <h5>Complete Web Project</h5>
+                    <button onclick="web_moveToInProgress()">In Progress</button>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div id="web-inprogress" style="visibility: hidden;">
+                    <h5>Complete Web Project</h5>
+                    <button onclick="web_moveToDone()" id="inprogress-card1">Done</button>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <h5 id="web-done" style="visibility: hidden;">Complete Web Project</h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+                <div id="db-todo">
+                    <h5>Submit Database Assignment</h5>
+                    <button onclick="db_moveToInProgress()">In Progress</button>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div id="db-inprogress" style="visibility: hidden;">
+                    <h5>Submit Database Assignment</h5>
+                    <button onclick="db_moveToDone()" id="inprogress-card1">Done</button>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <h5 id="db-done" style="visibility: hidden;">Submit Database Assignment</h5>
+            </div>
+          </div>
+      </div>
+      <script src="main.js"></script>
+</body>
+</html>
